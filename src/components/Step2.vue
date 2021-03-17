@@ -1,26 +1,18 @@
 <template>
-  <form class="col-lg-6 offset-lg-3">
-   <div class="form-group">
-     <label for="Country">Country</label>
-     <input type="text" class="form-control" id="Country" placeholder="Enter the country where you live">
-   </div>
-    <div class="form-group">
-      <label for="exampleFormControlTextarea1">Tell us something about you</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+  <div class="border">
+    <div class="mt-2">
+      <p>Country</p>
+      <input type="text" name="country" id="country" placeholder="Enter country name">
     </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" name="first_check" id="first_check" value="option1">
-      <label class="form-check-label" for="first_check">
-        I agree with your policy
-      </label>
+    <div class="mt-2">
+      <p>Phone number</p>
+      <input type="text" name="number" id="number" placeholder="Enter phone number">
     </div>
-    <div class="form-check">
-      <input class="form-check-input" type="checkbox" name="second_check" id="second_check" value="option2">
-      <label class="form-check-label" for="second_check">
-        Send me email notifications
-      </label>
+    <div class="mt-2">
+      <input class="mr-2" type="checkbox" name="Notify" id="notifications">
+      <label> Enable notifications</label>
     </div>
-  </form>
+  </div>
 </template>
 
 <script>
@@ -29,9 +21,11 @@ name: "Step2"
 }
 </script>
 
-<style scoped>
-form{
-  border: 2px skyblue solid;
+<style>
+.border{
+  margin: auto;
+  padding: 15px;
   border-radius: 5px;
+  width:25vw;  
 }
 </style>

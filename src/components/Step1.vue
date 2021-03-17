@@ -1,19 +1,18 @@
 <template>
-  <form class="col-lg-6 offset-lg-3">
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  <div class="border">
+    <div class="mt-2">
+      <p>Favorite animal</p>
+      <input type="text" name="animal" id="animal" placeholder="Enter favorite animal">
     </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Repeat email address</label>
-      <input type="email" class="form-control" placeholder="Repeat email">
+    <div class="mt-2">
+      <p>Favorite game</p>
+      <input type="text" name="game" id="game" placeholder="Enter favorite game">
     </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <div class="mt-2">
+      <p>Favorite book</p>
+      <input type="text" name="book" id="book" placeholder="Enter favorite book">
     </div>
-  </form>
+  </div>
 </template>
 
 <script>
@@ -22,9 +21,11 @@ name: "Step1"
 }
 </script>
 
-<style scoped>
-form{
-  border: 2px skyblue solid;
+<style>
+.border{
+  margin: auto;
+  padding: 15px;
   border-radius: 5px;
+  width:25vw;  
 }
 </style>

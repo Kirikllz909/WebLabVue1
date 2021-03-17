@@ -1,14 +1,18 @@
 <template>
-  <form class="col-lg-6 offset-lg-3">
-    <div class="form-group">
-      <label for="firstName">First name</label>
-      <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+  <div class="border">
+    <div class="mt-2">
+      <p for="firstName">First name</p>
+      <input type="text" id="firstName" placeholder="Enter first name">
     </div>
-    <div class="form-group">
-      <label for="secondName">Second name</label>
-      <input type="text" class="form-control" id="secondName" placeholder="Enter second name">
+    <div class="mt-2">
+      <p for="secondName">Second name</p>
+      <input type="text" id="secondName" placeholder="Enter second name">
     </div>
-  </form>
+    <div class="mt-2">
+      <input class="mr-2" type="radio">
+      <label> I'm not a robot</label>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -17,10 +21,11 @@ name: "Step3"
 }
 </script>
 
-<style scoped>
-form{
-  border: 2px skyblue solid;
+<style>
+.border{
+  margin: auto;
+  padding: 15px;
   border-radius: 5px;
-  height: 200px;
+  width:25vw;  
 }
 </style>
